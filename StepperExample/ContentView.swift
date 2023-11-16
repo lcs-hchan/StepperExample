@@ -9,6 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     @State var base: Int = 1
+    
+    var squared: Int{
+        return base * base
+    }
     var body: some View {
         VStack {
             
@@ -20,7 +24,7 @@ struct ContentView: View {
                     .font(.system(size: 44))
                 Text("=")
                     .font(.system(size: 96))
-                Text("25")
+                Text("\(squared)")
                     .font(.system(size: 96))
             }
             Stepper(value: $base, label:{
