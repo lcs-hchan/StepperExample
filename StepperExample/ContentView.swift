@@ -18,14 +18,15 @@ struct ContentView: View {
             
             Spacer()
             HStack(alignment: .top){
-                Text("\(base)")
-                    .font(.system(size: 96))
+                
+                    Text("(\(base))")
+                    .font(.system(size: 90))
                 Text("2")
                     .font(.system(size: 44))
                 Text("=")
-                    .font(.system(size: 96))
+                    .font(.system(size: 90))
                 Text("\(squared)")
-                    .font(.system(size: 96))
+                    .font(.system(size: 90))
             }
             Stepper(value: $base, label:{
                 Text("Base")
